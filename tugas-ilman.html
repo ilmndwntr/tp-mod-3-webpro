@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- Deklarasi dokumen HTML5 -->
+<html lang="id">
+<!-- Tag root untuk dokumen HTML, dengan atribut lang untuk aksesibilitas dan SEO -->
+<head>
+    <!-- Berisi metadata dan informasi tentang dokumen -->
+    <meta charset="UTF-8">
+    <!-- Menentukan pengodean karakter untuk dokumen, penting untuk menampilkan karakter dengan benar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mengatur viewport untuk responsivitas pada perangkat mobile -->
+    <title>Profile Muhammad Ilman Dewantara</title>
+    <!-- Menentukan judul halaman yang akan ditampilkan di tab browser -->
+    <style>
+        /* CSS internal untuk styling halaman, menyederhanakan tampilan */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        video {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        a {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <!-- Berisi konten utama yang akan ditampilkan di halaman -->
+    <div class="container">
+        <!-- Digunakan untuk mengelompokkan konten dan memberikan styling -->
+        <h1>Profile Diri</h1>
+        <!-- Judul utama halaman, memberikan konteks tentang isi halaman -->
+        <img src="https://cdn.discordapp.com/attachments/1186182034322882650/1289895194027884616/IMG_3915.jpg?ex=66fa7c03&is=66f92a83&hm=00817674604af4bd45e77036472a06573852be44de442467a9b0260fa6b5d6b0&" alt="Foto Profil Muhammad Ilman Dewantara">
+        <!-- Menampilkan foto profil, dengan alt text untuk aksesibilitas -->
+
+        <h2>Data Diri</h2>
+        <!-- Sub-judul untuk bagian data diri, membantu dalam organisasi informasi -->
+        <table>
+            <!-- Digunakan untuk menampilkan data dalam format tabel, memudahkan pembacaan informasi -->
+            <tr>
+                <th>Informasi</th>
+                <th>Detail</th>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td>Muhammad Ilman Dewantara</td>
+            </tr>
+            <tr>
+                <td>NIM</td>
+                <td>1303213069</td>
+            </tr>
+            <tr>
+                <td>Umur</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>ilmndwntr@student.telkomuniversity.ac.id</td>
+            </tr>
+        </table>
+
+        <h2>Video Perkenalan</h2>
+        <!-- Sub-judul untuk bagian video, memberikan konteks tentang konten video -->
+        <video controls>
+            <!-- Menampilkan video dengan kontrol pemutaran, memungkinkan interaksi pengguna -->
+            <source src="video_intro.mp4" type="video/mp4">
+            <!-- Menentukan sumber video dan tipe file -->
+            Browser Anda tidak mendukung pemutaran video.
+            <!-- Teks alternatif jika browser tidak mendukung tag video -->
+        </video>
+
+        <h2>Formulir Kontak</h2>
+        <!-- Sub-judul untuk bagian formulir, menjelaskan tujuan form -->
+        <form action="submit.php" method="POST">
+            <!-- Membuat formulir dengan metode POST yang akan dikirim ke submit.php -->
+            <label for="name">Nama:</label>
+            <!-- Label untuk input nama, meningkatkan aksesibilitas -->
+            <input type="text" id="name" name="name" required>
+            <!-- Input teks untuk nama, dengan atribut required untuk validasi -->
+            
+            <label for="email">Email:</label>
+            <!-- Label untuk input email, meningkatkan aksesibilitas -->
+            <input type="email" id="email" name="email" required>
+            <!-- Input email, dengan validasi tipe email dan atribut required -->
+            
+            <button type="submit">Kirim</button>
+            <!-- Tombol submit untuk mengirim formulir -->
+        </form>
+
+        <h2>Social Media</h2>
+        <!-- Sub-judul untuk bagian social media, memberikan konteks tentang tautan -->
+        <a href="https://www.linkedin.com/in/muhammad-ilman-dewantara-3867711a9/" target="_blank">LinkedIn</a>
+        <!-- Tautan ke profil LinkedIn, dibuka di tab baru untuk UX yang lebih baik -->
+    </div>
+</body>
+</html>
