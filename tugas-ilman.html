@@ -66,6 +66,17 @@
         }
         a {
             color: #4CAF50;
+            margin-right: 10px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            background-color: #e0e0e0;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -77,6 +88,13 @@
         <!-- Judul utama halaman, memberikan konteks tentang isi halaman -->
         <img src="https://cdn.discordapp.com/attachments/1186182034322882650/1289895194027884616/IMG_3915.jpg?ex=66fa7c03&is=66f92a83&hm=00817674604af4bd45e77036472a06573852be44de442467a9b0260fa6b5d6b0&" alt="Foto Profil Muhammad Ilman Dewantara">
         <!-- Menampilkan foto profil, dengan alt text untuk aksesibilitas -->
+
+        <h2>Perkenalan Diri</h2>
+        <!-- Sub-judul untuk bagian perkenalan diri -->
+        <p>
+            <!-- contoh paragraf berisi perkenalan diri singkat -->
+            Halo! Saya Muhammad Ilman Dewantara, seorang mahasiswa IT di Telkom University. Saya memiliki passion dalam pengembangan web dan selalu bersemangat untuk belajar teknologi baru.
+        </p>
 
         <h2>Data Diri</h2>
         <!-- Sub-judul untuk bagian data diri, membantu dalam organisasi informasi -->
@@ -103,6 +121,18 @@
                 <td>ilmndwntr@student.telkomuniversity.ac.id</td>
             </tr>
         </table>
+
+        <h2>Keterampilan</h2>
+        <!-- Sub-judul untuk bagian keterampilan -->
+        <div class="skills">
+            <!-- Div untuk mengelompokkan dan styling keterampilan -->
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">Python</span>
+            <span class="skill">PHP</span>
+            <span class="skill">Git</span>
+            <span class="skill">Javascript</span>
+        </div>
 
         <h2>Video Perkenalan</h2>
         <!-- Sub-judul untuk bagian video, memberikan konteks tentang konten video -->
@@ -136,6 +166,8 @@
         <!-- Sub-judul untuk bagian social media, memberikan konteks tentang tautan -->
         <a href="https://www.linkedin.com/in/muhammad-ilman-dewantara-3867711a9/" target="_blank">LinkedIn</a>
         <!-- Tautan ke profil LinkedIn, dibuka di tab baru untuk UX yang lebih baik -->
+        <a href="https://github.com/ilmndwntr/tp-mod-3-webpro" target="_blank">Github</a>
+        <!-- Tautan ke profil Github, dibuka di tab baru untuk UX yang lebih baik -->
     </div>
 </body>
 </html>
